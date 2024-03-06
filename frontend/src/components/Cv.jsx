@@ -12,8 +12,9 @@ import {
   FaTwitter,
   FaTimes,
   FaBars,
+  FaInstagram,
 } from "react-icons/fa";
-import avatar from "../assets/Avatar.png";
+import avatar from "../assets/rohit-PhotoRoom.jpg";
 
 const Cv = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -91,18 +92,19 @@ const Cv = () => {
 
           <div className={styles.socials}>
             {/* We  */}
-            <a href="www.linkedin.com/in/rohit-kumar-69b0ab204" target="_blank" rel="noopener noreferrer"> <FaLinkedinIn /> </a>
-            <Link to="#">
-              <FaFacebookF />
-            </Link>
+            {/* <a href="www.linkedin.com/in/rohit-kumar-69b0ab204" target="_blank" rel="noopener noreferrer"> <FaLinkedinIn /> </a> */}
+            <a href="https://www.linkedin.com/in/rohit-thakur-69b0ab204" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+
+            <a href="https://www.facebook.com/profile.php?id=100048504011733&mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/it_z_rohit_rajput/#" target="_blank" rel=""><FaInstagram /></a>
             <Link to="#">
               <FaTwitter />
             </Link>
           </div>
+          <a href="https://drive.google.com/file/d/1VibU-q0EC7z9UGhp0uJCcm2MBEo935ZR/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.button}>
+          <span>Download Cv</span>
+          </a>
 
-          <Link to="#" className={styles.button}>
-            <span>Download Cv</span>
-          </Link>
         </div>
 
         <div className={styles.copyright}>

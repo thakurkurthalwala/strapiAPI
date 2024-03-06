@@ -27,6 +27,25 @@
     }
 }
 
+// .imageContainer {
+//     --image-width: 10rem;
+//     width: var(--image-width);
+//     height: var(--image-width);
+//     min-height: var(--image-width);
+//     display: flex;
+//     justify-content: center;
+//     border-radius: 50%;
+//     background: var(--white);
+//     overflow: hidden;
+//     border: 2px solid var(--white);
+
+//     margin-top: 5rem;
+//     margin-bottom: 2rem;
+
+//     img {
+//         width: 8rem;
+//     }
+// }
 .imageContainer {
     --image-width: 10rem;
     width: var(--image-width);
@@ -38,12 +57,13 @@
     background: var(--white);
     overflow: hidden;
     border: 2px solid var(--white);
-
     margin-top: 5rem;
     margin-bottom: 2rem;
 
     img {
-        width: 8rem;
+        width: 100%; /* Set image width to 100% of the container */
+        height: 100%; /* Set image height to 100% of the container */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
     }
 }
 
